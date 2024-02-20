@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Code Editor</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header>
+        Online Code Editor
+    </header>
+    <main>
+        <section class="code-editor">
+            <div>
+                <div class="title-label">
+                    <img src="logo/html5-logo-24.png" alt="html-logo">
+                    <label>HTML</label>
+                </div>
+                <div>
+                    <textarea onkeyup="run()" id="html-text" spellcheck="false"></textarea>
+                </div>
+
+            </div>
+            <div>
+                <div class="title-label"> 
+                    <img src="logo/css3-logo-24.png" alt="css-logo">
+                    <label>CSS</label>
+                </div>
+                <div>
+                    <textarea onkeyup="run()" id="css-text" spellcheck="false"></textarea>
+                </div>
+            </div>
+            <div>
+                <div class="title-label">
+                    <img src="logo/javascript-logo-24.png" alt="js-logo">
+                    <label>JavaScript</label>
+                </div>
+                <div> <textarea onkeyup="run()" id="js-text" spellcheck="false"></textarea></div>
+            </div>
+        </section>
+        <section>
+            <div class="title-label">
+                <img style="width: 30px;" src="logo/play-regular-24.png" alt="run-logo">
+                 <label style="padding: 0;">OUTPUT</label>
+            </div>
+            <div><iframe id="output-display"></iframe></div>
+
+        </section>
+    </main>
+    <script src="JS/javascript.js"></script>
+</body>
+
+</html>
